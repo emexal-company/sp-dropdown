@@ -26,26 +26,26 @@ import '@spectrum/sp-textfield';
 export default function template(this: DemoDropdown) {
   return html`
       <div>
-      <sp-dropdown width="100">
+      <sp-dropdown width="100" position="alone">
           <sp-dropdownitem text="Brazil"></sp-dropdownitem>
           <sp-dropdownitem text="Peru"></sp-dropdownitem>
           <sp-dropdownitem text="Iceland"></sp-dropdownitem>
         </sp-dropdown>
       </div>
-      <sp-group style="display: flex;">
-        <sp-dropdown width="100">
+      <sp-group style="display: flex;" >
+        <sp-dropdown width="100" position="left">
           <sp-dropdownitem text="Brazil"></sp-dropdownitem>
           <sp-dropdownitem text="Peru"></sp-dropdownitem>
           <sp-dropdownitem text="Iceland"></sp-dropdownitem>
         </sp-dropdown>
-        <sp-textfield>
+        <sp-textfield position="middle">
         </sp-textfield>
-        <sp-dropdown width="100">
+        <sp-dropdown width="100" position="middle">
           <sp-dropdownitem text="Brazil"></sp-dropdownitem>
           <sp-dropdownitem text="Peru"></sp-dropdownitem>
           <sp-dropdownitem text="Iceland"></sp-dropdownitem>
         </sp-dropdown>        
-        <sp-dropdown width="100">
+        <sp-dropdown width="100" position="right">
           <sp-dropdownitem text="Brazil"></sp-dropdownitem>
           <sp-dropdownitem text="Peru"></sp-dropdownitem>
           <sp-dropdownitem text="Iceland"></sp-dropdownitem>

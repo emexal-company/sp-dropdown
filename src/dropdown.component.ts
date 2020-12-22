@@ -38,6 +38,7 @@ export class Dropdown extends Base {
   @property({ type: Boolean }) error = false;
   @property({ type: Boolean }) multilist = false;
   @property({ type: String }) width = false;
+  @property({ type: String }) position = 'alone';
   @query('slot') private myslot!: HTMLElement;
 
   public updateSelected() {

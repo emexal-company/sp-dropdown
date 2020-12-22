@@ -32,6 +32,7 @@ let Dropdown = class Dropdown extends Base {
         this.error = false;
         this.multilist = false;
         this.width = false;
+        this.position = 'alone';
     }
     updateSelected() {
         const items = this.getItems();
@@ -117,6 +118,10 @@ __decorate([
     property({ type: String }),
     __metadata("design:type", Object)
 ], Dropdown.prototype, "width", void 0);
+__decorate([
+    property({ type: String }),
+    __metadata("design:type", Object)
+], Dropdown.prototype, "position", void 0);
 __decorate([
     query('slot'),
     __metadata("design:type", HTMLElement)

@@ -33,6 +33,7 @@ export declare class Dropdown extends Base {
     error: boolean;
     multilist: boolean;
     width: boolean;
+    position: string;
     private myslot;
     updateSelected(): void;
     protected firstUpdated(): void;

@@ -52,9 +52,10 @@ export default function template(this: Dropdown) {
     }
 
     return html`
-    <div class='spectrum-Dropdown ${classMap(classes2)}' style="${styleMap({ width: this.width + 'px', minWidth: this.width + 'px' })}">
+    <div position="${this.position}" class='spectrum-Dropdown ${classMap(classes2)}' style="${styleMap({ width: this.width + 'px', minWidth: this.width + 'px' })}">
         <sp-popover style="${styleMap({ width: this.width + 'px', minWidth: this.width + 'px' })}" ?disabled=${this.disabled}>
         <button
+            position="${this.position}"
             slot="dropdown-trigger"
             ?disabled="${this.disabled}"
             class="spectrum-FieldButton spectrum-Dropdown-trigger ${classMap(classes1)}" 
